@@ -77,4 +77,3 @@ The simulation includes a Reconciliation Module that ensures the Python output m
 
 ---
 *Author: Krzysztof Mielewczyk * *Data Source: XTB (Historical Sample)*
-
