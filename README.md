@@ -22,14 +22,15 @@ Interactive Power BI Dashboard validating the strategy performance.
 
 ---
 
-## The Strategy: Swap Arbitrage & Scalping
-The core logic is based on the Cost of Carry concept.
+## The Strategy: Institutional Hedging Pressure
+The core logic is based on the **Institutional Conviction** concept (following the "smart money" cost).
 
-1.  **Signal Generation:** The Python script analyzes the `Swap Rate Delta`.
-    * Logic: If the cost of holding a SHORT position drops (or becomes positive), the algorithm treats it as a signal that "smart money" might be positioning for a drop.
-2.  **Execution (Hit & Run):**
-    * We enter the market in the direction of the "cheaper money".
-    * **Take Profit:** Fixed at 0.5% to capitalize on intraday volatility.
+1.  **Signal Generation:** The Python script monitors the `Swap Rate Delta`.
+    * **Logic:** If the cost of holding a position **increases** (Swap becomes more negative/expensive), the algorithm treats it as a signal of **High Conviction**.
+    * *Rationale:* If institutions are willing to pay a premium to hold a SHORT position, it indicates strong bearish sentiment and hedging pressure.
+2.  **Execution (Contrarian Flow):**
+    * We enter the market in the direction where the "holding cost" is rising, following the institutional volume.
+    * **Take Profit:** Fixed at 0.5% to capitalize on the expected momentum.
     * **Risk Management:** Position sizing is calibrated (0.93 Lot) to match a specific risk profile.
 
 ### Analysis Pipeline (The Tech Stack)
@@ -77,3 +78,4 @@ The simulation includes a Reconciliation Module that ensures the Python output m
 
 ---
 *Author: Krzysztof Mielewczyk * *Data Source: XTB (Historical Sample)*
+
