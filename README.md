@@ -18,7 +18,7 @@ The goal was to simulate, optimize, and visualize a strategy that aligns with in
 ## Dashboard Preview
 Interactive Power BI Dashboard validating the strategy performance.
 
-![Power BI Dashboard](images/dashboard.png)
+![Power BI Dashboard](dashboard.png)
 
 ---
 
@@ -37,7 +37,7 @@ The strategy data flows through Python, is stored/queried in SQL, and verified i
 
 | 1. Python Simulation | 2. SQL Data Warehousing | 3. Excel Verification |
 | :---: | :---: | :---: |
-| ![Python Code](images/code_snippet.png) | ![SQL Query](images/sql_query.png) | ![Excel Analysis](images/excel_pivot.png) |
+| ![Python Code](code_snippet.png) | ![SQL Query](sql_query.png) | ![Excel Analysis](excel_pivot.png) |
 
 ## Project Structure
 The repository is organized to simulate a production-grade data pipeline:
@@ -77,3 +77,4 @@ The simulation includes a Reconciliation Module that ensures the Python output m
 
 ---
 *Author: Krzysztof Mielewczyk * *Data Source: XTB (Historical Sample)*
+
